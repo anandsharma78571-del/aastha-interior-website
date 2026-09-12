@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aastha Interior | Furniture &amp; Complete Home Interior Solutions in Dhanbad</title>
+<meta name="description" content="Aastha Interior, Binod Bihari Chowk, Dhanbad — premium furniture, modular kitchens, wardrobes, wall panels and complete home interior solutions. Call or WhatsApp for a free consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F2EA;
+    --cream-soft:#EFE8DA;
+    --charcoal:#24211D;
+    --charcoal-soft:#413B33;
+    --wood:#7C5A3B;
+    --wood-deep:#4E3826;
+    --brass:#A9865B;
+    --white:#FFFFFF;
+    --line: rgba(36,33,29,0.14);
+    --radius: 2px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--charcoal);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.15;
+    color:var(--charcoal);
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  section{padding:88px 0;}
+  @media (max-width:768px){ section{padding:56px 0;} }
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:2px solid var(--wood-deep); outline-offset:3px;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,242,234,0.94);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:1180px; margin:0 auto;
+  }
+  .brand{font-family:'Fraunces', serif; font-size:1.35rem; font-weight:600;}
+  .brand span{color:var(--wood);}
+  nav.links{display:flex; gap:32px;}
+  nav.links a{font-size:0.95rem; color:var(--charcoal-soft); transition:color .15s;}
+  nav.links a:hover{color:var(--wood-deep);}
+  .nav-actions{display:flex; align-items:center; gap:14px;}
+  .btn{
+    display:inline-block; padding:12px 24px; font-size:0.95rem;
+    border:1px solid var(--charcoal); border-radius:var(--radius);
+    background:transparent; color:var(--charcoal); cursor:pointer;
+    font-family:'Work Sans',sans-serif; transition:background .15s, color .15s, border-color .15s;
+  }
+  .btn:hover{background:var(--charcoal); color:var(--cream);}
+  .btn-solid{
+    background:var(--wood-deep); border-color:var(--wood-deep); color:var(--white);
+  }
+  .btn-solid:hover{background:var(--charcoal); border-color:var(--charcoal);}
+  .btn-sm{padding:9px 18px; font-size:0.88rem;}
+  .menu-toggle{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .menu-toggle span{display:block; width:24px; height:2px; background:var(--charcoal); margin:5px 0;}
+
+  @media (max-width:900px){
+    nav.links{
+      position:fixed; top:64px; left:0; right:0; bottom:0;
+      background:var(--cream); flex-direction:column; padding:32px 24px; gap:0;
+      transform:translateX(100%); transition:transform .25s ease; overflow-y:auto;
+    }
+    nav.links.open{transform:translateX(0);}
+    nav.links a{padding:16px 0; border-bottom:1px solid var(--line); font-size:1.1rem;}
+    .nav-actions .btn:not(.wa-nav){display:none;}
+    .menu-toggle{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative; min-height:88vh; display:flex; align-items:center;
+    background:linear-gradient(0deg, rgba(24,20,16,0.55), rgba(24,20,16,0.28)),
+      url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  }
+  .hero-inner{max-width:640px; padding:0 24px; color:var(--cream);}
+  .hero h1{font-size:clamp(2.4rem, 5vw, 3.6rem); color:var(--white);}
+  .hero p{margin-top:20px; font-size:1.15rem; color:var(--cream-soft); max-width:480px;}
+  .hero-actions{display:flex; gap:14px; margin-top:36px; flex-wrap:wrap;}
+  .hero .btn{border-color:var(--white); color:var(--white);}
+  .hero .btn:hover{background:var(--white); color:var(--charcoal);}
+  .hero .btn-solid{background:var(--wood); border-color:var(--wood); color:var(--white);}
+  .hero .btn-solid:hover{background:var(--brass); border-color:var(--brass);}
+
+  /* ---------- Section headings ---------- */
+  .eyebrow-label{color:var(--wood); font-size:0.95rem; margin-bottom:10px;}
+  .section-head{max-width:620px; margin-bottom:48px;}
+  .section-head h2{font-size:clamp(1.8rem, 3.4vw, 2.5rem);}
+  .section-head p{margin-top:14px; color:var(--charcoal-soft); font-size:1.05rem;}
+
+  /* ---------- Categories ---------- */
+  .cat-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:2px;
+    background:var(--charcoal);
+  }
+  @media (max-width:900px){ .cat-grid{grid-template-columns:repeat(2,1fr);} }
+  .cat-tile{
+    position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--charcoal);
+  }
+  .cat-tile img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
+  .cat-tile:hover img{transform:scale(1.05);}
+  .cat-tile::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(0deg, rgba(20,16,12,0.75) 0%, rgba(20,16,12,0) 55%);
+  }
+  .cat-tile .label{
+    position:absolute; left:18px; bottom:16px; color:var(--white);
+    font-family:'Fraunces', serif; font-size:1.15rem; z-index:2;
+  }
+
+  /* ---------- Complete interior ---------- */
+  .interior-section{background:var(--charcoal); color:var(--cream);}
+  .interior-section .section-head h2{color:var(--white);}
+  .interior-section .section-head p{color:rgba(246,242,234,0.72);}
+  .interior-list{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:1px 32px;
+    border-top:1px solid rgba(246,242,234,0.18);
+  }
+  @media (max-width:900px){ .interior-list{grid-template-columns:repeat(2,1fr);} }
+  .interior-item{
+    padding:20px 0; border-bottom:1px solid rgba(246,242,234,0.18);
+    font-size:1.02rem; color:rgba(246,242,234,0.9);
+  }
+  .interior-section .btn{margin-top:44px; border-color:var(--cream); color:var(--cream);}
+  .interior-section .btn:hover{background:var(--cream); color:var(--charcoal);}
+
+  /* ---------- Projects (editorial gallery) ---------- */
+  .project-filter{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px;}
+  .project-filter button{
+    font-family:'Work Sans',sans-serif; font-size:0.9rem; padding:8px 16px;
+    border:1px solid var(--line); background:transparent; border-radius:20px; cursor:pointer;
+    color:var(--charcoal-soft);
+  }
+  .project-filter button.active{background:var(--wood-deep); border-color:var(--wood-deep); color:var(--white);}
+  .project-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:28px;}
+  @media (max-width:900px){ .project-grid{grid-template-columns:1fr;} }
+  .project-card{}
+  .project-card img{width:100%; aspect-ratio:4/3; object-fit:cover;}
+  .project-card.tall img{aspect-ratio:3/4;}
+  .project-meta{display:flex; justify-content:space-between; align-items:baseline; margin-top:14px; gap:12px;}
+  .project-meta h3{font-size:1.15rem; font-weight:500;}
+  .project-meta a{font-size:0.9rem; color:var(--wood-deep); border-bottom:1px solid var(--wood-deep); white-space:nowrap;}
+  .project-desc{color:var(--charcoal-soft); font-size:0.95rem; margin-top:4px;}
+
+  /* ---------- Before / After ---------- */
+  .ba-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+  @media (max-width:700px){ .ba-grid{grid-template-columns:1fr;} }
+  .ba-pair{display:grid; grid-template-columns:1fr 1fr; gap:2px; background:var(--charcoal);}
+  .ba-pair figure{position:relative; margin:0;}
+  .ba-pair img{width:100%; aspect-ratio:1/1; object-fit:cover;}
+  .ba-pair figcaption{
+    position:absolute; top:10px; left:10px; background:rgba(24,20,16,0.75); color:var(--cream);
+    font-size:0.78rem; padding:4px 10px;
+  }
+  .ba-label{margin-top:12px; font-size:0.98rem; color:var(--charcoal-soft);}
+
+  /* ---------- Featured furniture ---------- */
+  .product-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:32px 24px;}
+  @media (max-width:900px){ .product-grid{grid-template-columns:repeat(2,1fr);} }
+  .product-card img{width:100%; aspect-ratio:1/1; object-fit:cover;}
+  .product-card h3{font-size:1.02rem; font-weight:500; margin-top:14px;}
+  .product-meta{font-size:0.88rem; color:var(--charcoal-soft); margin-top:4px;}
+  .product-price{margin-top:8px; font-family:'Fraunces',serif; color:var(--wood-deep); font-size:1.02rem;}
+  .product-card .btn{margin-top:12px; width:100%; text-align:center;}
+
+  /* ---------- Why choose us ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:36px 28px;}
+  @media (max-width:800px){ .why-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:500px){ .why-grid{grid-template-columns:1fr;} }
+  .why-item{border-top:1px solid var(--line); padding-top:16px;}
+  .why-item h3{font-size:1.05rem; font-weight:500; margin-bottom:6px;}
+  .why-item p{color:var(--charcoal-soft); font-size:0.95rem;}
+
+  /* ---------- Reviews ---------- */
+  .review-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  @media (max-width:800px){ .review-grid{grid-template-columns:1fr;} }
+  .review-card{
+    background:var(--white); border:1px solid var(--line); padding:28px; border-radius:var(--radius);
+  }
+  .stars{color:var(--brass); letter-spacing:2px; margin-bottom:12px;}
+  .review-card p{color:var(--charcoal-soft); font-style:italic;}
+  .review-name{margin-top:16px; font-size:0.9rem; color:var(--charcoal);}
+  .review-note{
+    margin-top:28px; font-size:0.9rem; color:var(--charcoal-soft); border-left:2px solid var(--wood);
+    padding-left:14px;
+  }
+
+  /* ---------- Consultation form ---------- */
+  .consult{background:var(--cream-soft);}
+  .consult-inner{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  @media (max-width:900px){ .consult-inner{grid-template-columns:1fr;} }
+  .form-group{margin-bottom:18px;}
+  .form-group label{display:block; font-size:0.88rem; margin-bottom:6px; color:var(--charcoal-soft);}
+  .form-group input, .form-group select, .form-group textarea{
+    width:100%; padding:13px 14px; border:1px solid var(--line); background:var(--white);
+    font-family:'Work Sans',sans-serif; font-size:0.98rem; border-radius:var(--radius);
+  }
+  .form-group textarea{resize:vertical; min-height:90px;}
+  form .btn{width:100%; margin-top:6px;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact-list{list-style:none; margin-top:24px;}
+  .contact-list li{padding:14px 0; border-top:1px solid var(--line); font-size:1rem;}
+  .contact-list li:last-child{border-bottom:1px solid var(--line);}
+  .contact-list .label-sm{display:block; font-size:0.8rem; color:var(--wood); margin-bottom:4px;}
+  .map-frame{width:100%; height:340px; border:0; filter:grayscale(0.15);}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
+  @media (max-width:900px){ .about-grid{grid-template-columns:1fr;} }
+  .about-grid img{width:100%; aspect-ratio:4/5; object-fit:cover;}
+  .about-grid p{color:var(--charcoal-soft); font-size:1.05rem; margin-top:16px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--charcoal); color:rgba(246,242,234,0.85); padding:56px 0 28px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:40px;}
+  @media (max-width:700px){ .footer-grid{grid-template-columns:1fr; gap:28px;} }
+  footer h3{color:var(--white); font-size:1.1rem; margin-bottom:6px;}
+  footer p{color:rgba(246,242,234,0.65); font-size:0.92rem; margin-top:8px;}
+  .footer-links a{display:block; padding:6px 0; font-size:0.92rem; color:rgba(246,242,234,0.75);}
+  .footer-bottom{
+    margin-top:44px; padding-top:22px; border-top:1px solid rgba(246,242,234,0.15);
+    font-size:0.82rem; color:rgba(246,242,234,0.5); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  /* ---------- WhatsApp floating button ---------- */
+  .wa-float{
+    position:fixed; bottom:22px; right:22px; z-index:60;
+    background:#25D366; width:58px; height:58px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.28);
+  }
+  .wa-float svg{width:30px; height:30px;}
+
+  .section-divider{height:1px; background:var(--line); width:100%;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-row">
+    <a href="#home" class="brand">AASTHA <span>INTERIOR</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#furniture">Furniture</a>
+      <a href="#interior">Interior Design</a>
+      <a href="#projects">Our Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://wa.me/919693948201?text=Hello%20Aastha%20Interior%2C%20I%20want%20information%20about%20furniture%2Finterior%20work." class="btn btn-solid btn-sm wa-nav" style="margin-top:20px; display:inline-block;">WhatsApp Us</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#consult" class="btn btn-sm">Free Consultation</a>
+      <a href="https://wa.me/919693948201?text=Hello%20Aastha%20Interior%2C%20I%20want%20information%20about%20furniture%2Finterior%20work." class="btn btn-solid btn-sm wa-nav">WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero" style="padding:0;">
+  <div class="hero-inner">
+    <p class="eyebrow-label" style="color:var(--brass);">Dhanbad's Furniture &amp; Interior Studio</p>
+    <h1>Beautiful Furniture. Complete Home Interiors.</h1>
+    <p>Premium furniture and complete interior solutions in Dhanbad — from a single sofa to a fully designed home.</p>
+    <div class="hero-actions">
+      <a href="#furniture" class="btn">Explore Furniture</a>
+      <a href="#consult" class="btn btn-solid">Get Free Consultation</a>
+      <a href="https://wa.me/919693948201?text=Hello%20Aastha%20Interior%2C%20I%20want%20information%20about%20furniture%2Finterior%20work." class="btn">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="furniture" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">What we make</p>
+      <h2>Furniture &amp; interior work, category by category</h2>
+      <p>Tap a category to see the kind of work we do — every piece can be customised in size, material and finish.</p>
+    </div>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Sofa"><span class="label">Sofa</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=700&q=80" alt="Bed"><span class="label">Bed</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=700&q=80" alt="Dining furniture"><span class="label">Dining</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80" alt="Wardrobe"><span class="label">Wardrobe</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Modular kitchen"><span class="label">Modular Kitchen</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80" alt="Wall panels"><span class="label">Wall Panels</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80" alt="Office furniture"><span class="label">Office Furniture</span></div>
+    <div class="cat-tile"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=700&q=80" alt="Complete interior"><span class="label">Complete Interior</span></div>
+  </div>
+</section>
+
+<!-- COMPLETE HOME INTERIOR -->
+<section id="interior" class="interior-section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label" style="color:var(--brass);">One studio, every room</p>
+      <h2>Complete home interior under one roof</h2>
+      <p>Furniture, walls, storage and layout — planned together, not room by room.</p>
+    </div>
+    <div class="interior-list">
+      <div class="interior-item">Living Room</div>
+      <div class="interior-item">Bedroom</div>
+      <div class="interior-item">Modular Kitchen</div>
+      <div class="interior-item">Wardrobe</div>
+      <div class="interior-item">Wall Design</div>
+      <div class="interior-item">Dining Area</div>
+      <div class="interior-item">Office Interior</div>
+      <div class="interior-item">PVC / HDF Panels</div>
+    </div>
+    <a href="#consult" class="btn">Discuss Your Home Interior</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Recent work</p>
+      <h2>Our recent projects</h2>
+      <p>A selection of homes we've worked on. Each project is custom-designed to meet unique client needs.</p>
+    </div>
+    <div class="project-filter">
+      <button class="active" onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('living')">Living Room</button>
+      <button onclick="filterProjects('bedroom')">Bedroom</button>
+      <button onclick="filterProjects('kitchen')">Kitchen</button>
+    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Modern living room project">
+        <div class="project-meta">
+          <h3>Modern Living Elegance</h3>
+          <a href="#contact">View Details</a>
+        </div>
+        <p class="project-desc">Contemporary sofa with wall panels and integrated storage</p>
+      </div>
+      <div class="project-card tall">
+        <img src="https://images.unsplash.com/photo-1565003588042-98f3237adae0?auto=format&fit=crop&w=800&q=80" alt="Bedroom design project">
+        <div class="project-meta">
+          <h3>Luxury Bedroom</h3>
+          <a href="#contact">View Details</a>
+        </div>
+        <p class="project-desc">Custom wardrobe and bed frame design</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Kitchen project">
+        <div class="project-meta">
+          <h3>Modular Kitchen</h3>
+          <a href="#contact">View Details</a>
+        </div>
+        <p class="project-desc">Fully equipped modular kitchen with premium finishes</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1600585152915-be1277a56c96?auto=format&fit=crop&w=800&q=80" alt="Office interior project">
+        <div class="project-meta">
+          <h3>Office Interior</h3>
+          <a href="#contact">View Details</a>
+        </div>
+        <p class="project-desc">Professional workspace design with custom furniture</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="transformations">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Transformations</p>
+      <h2>Before &amp; After</h2>
+      <p>See how we transform spaces into beautiful, functional homes.</p>
+    </div>
+    <div class="ba-grid">
+      <div>
+        <div class="ba-pair">
+          <figure><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80" alt="Before renovation"><figcaption>Before</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=400&q=80" alt="After renovation"><figcaption>After</figcaption></figure>
+        </div>
+        <p class="ba-label">Living room complete makeover with custom furniture and wall design</p>
+      </div>
+      <div>
+        <div class="ba-pair">
+          <figure><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=400&q=80" alt="Before kitchen renovation"><figcaption>Before</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=400&q=80" alt="After kitchen renovation"><figcaption>After</figcaption></figure>
+        </div>
+        <p class="ba-label">Kitchen transformation with modular design and premium fixtures</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED FURNITURE -->
+<section id="featured-furniture">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Showcase</p>
+      <h2>Featured Furniture Pieces</h2>
+      <p>Handpicked pieces available for customization. All items can be tailored to your space and preferences.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" alt="Contemporary Sofa">
+        <h3>Contemporary Sofa</h3>
+        <p class="product-meta">Modular • Customizable</p>
+        <p class="product-price">₹45,000+</p>
+        <a href="#consult" class="btn btn-sm">Inquire Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1540932239986-310128078ceb?auto=format&fit=crop&w=400&q=80" alt="Platform Bed">
+        <h3>Platform Bed</h3>
+        <p class="product-meta">Custom Sizes • Premium Materials</p>
+        <p class="product-price">₹35,000+</p>
+        <a href="#consult" class="btn btn-sm">Inquire Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" alt="Dining Table">
+        <h3>Dining Table Set</h3>
+        <p class="product-meta">6-Seater • Solid Wood</p>
+        <p class="product-price">₹55,000+</p>
+        <a href="#consult" class="btn btn-sm">Inquire Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1595521624992-b8b3e5a6e5c4?auto=format&fit=crop&w=400&q=80" alt="Wall Unit">
+        <h3>Modular Wall Unit</h3>
+        <p class="product-meta">Storage + Display • Wooden</p>
+        <p class="product-price">₹28,000+</p>
+        <a href="#consult" class="btn btn-sm">Inquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why-us">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Why Aastha</p>
+      <h2>Why choose us</h2>
+      <p>We're more than a furniture store — we're your interior design partner.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>✓ Customization</h3>
+        <p>Every piece tailored to your space, preferences, and budget. No compromises.</p>
+      </div>
+      <div class="why-item">
+        <h3>✓ Expert Design</h3>
+        <p>Our designers work with you to create cohesive, beautiful interiors that function perfectly.</p>
+      </div>
+      <div class="why-item">
+        <h3>✓ Quality Materials</h3>
+        <p>Premium wood, fabrics, and finishes for furniture that lasts decades.</p>
+      </div>
+      <div class="why-item">
+        <h3>✓ Full Service</h3>
+        <p>From concept to installation, we handle every step of your interior project.</p>
+      </div>
+      <div class="why-item">
+        <h3>✓ Competitive Pricing</h3>
+        <p>Premium quality and design without the premium price tag.</p>
+      </div>
+      <div class="why-item">
+        <h3>✓ Local Expertise</h3>
+        <p>Serving Dhanbad families and businesses for years. We know the local market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">What clients say</p>
+      <h2>Customer Reviews</h2>
+      <p>Real feedback from real customers about their experience with Aastha Interior.</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Aastha Interior completely transformed our living room. The team was professional, on time, and delivered exactly what we envisioned. Highly recommended!"</p>
+        <p class="review-name"><strong>Rajesh Kumar</strong> — Dhanbad</p>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Best furniture and interior design experience in Dhanbad. The customization options are endless, and the quality is unmatched. Worth every rupee."</p>
+        <p class="review-name"><strong>Priya Singh</strong> — Dhanbad</p>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"From kitchen design to custom wardrobes, Aastha handled everything beautifully. The team listened to our ideas and made them reality. Thank you!"</p>
+        <p class="review-name"><strong>Amit Sharma</strong> — Dhanbad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION FORM -->
+<section id="consult" class="consult">
+  <div class="wrap">
+    <div class="consult-inner">
+      <div>
+        <div class="section-head">
+          <p class="eyebrow-label">Let's talk</p>
+          <h2>Get Your Free Consultation</h2>
+          <p>Fill out the form below and our design team will reach out to discuss your project, timeline, and budget.</p>
+        </div>
+      </div>
+      <form onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="project">Project Type</label>
+          <select id="project" name="project" required>
+            <option value="">Select a project type</option>
+            <option value="living">Living Room</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="kitchen">Modular Kitchen</option>
+            <option value="wardrobe">Wardrobe</option>
+            <option value="office">Office Interior</option>
+            <option value="complete">Complete Home Interior</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about your vision</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Send Consultation Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Our story</p>
+      <h2>About Aastha Interior</h2>
+    </div>
+    <div class="about-grid">
+      <img src="https://images.unsplash.com/photo-1545026519-40f4d4dcd1d5?auto=format&fit=crop&w=600&q=80" alt="Aastha Interior team at work">
+      <div>
+        <h3 style="font-size:1.3rem; margin-bottom:16px;">Crafting beautiful spaces since 2015</h3>
+        <p>Aastha Interior started with a simple vision: to bring premium furniture and thoughtful interior design to Dhanbad, without the premium price tag.</p>
+        <p>Today, we've helped hundreds of families and businesses create spaces they love. From small customizations to complete home interiors, we bring expertise, creativity, and quality to every project.</p>
+        <p>Our team of designers and craftspeople are committed to understanding your vision and making it reality. We believe great design should be accessible to everyone.</p>
+        <h4 style="margin-top:28px; margin-bottom:12px;">Our Services</h4>
+        <ul style="list-style: none; color:var(--charcoal-soft);">
+          <li>✓ Custom Furniture Design &amp; Manufacturing</li>
+          <li>✓ Complete Home Interior Planning</li>
+          <li>✓ Modular Kitchens</li>
+          <li>✓ Custom Wardrobes &amp; Storage</li>
+          <li>✓ Wall Paneling &amp; Decor</li>
+          <li>✓ Office Interior Solutions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow-label">Get in touch</p>
+      <h2>Contact Us</h2>
+      <p>Visit us, call us, or send a message. We're here to help!</p>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li>
+          <span class="label-sm">Address</span>
+          Binod Bihari Chowk, Dhanbad, Jharkhand — 826001
+        </li>
+        <li>
+          <span class="label-sm">Phone</span>
+          <a href="tel:+919693948201" style="font-weight:500;">+91 9693948201</a>
+        </li>
+        <li>
+          <span class="label-sm">WhatsApp</span>
+          <a href="https://wa.me/919693948201" style="font-weight:500;">Chat on WhatsApp</a>
+        </li>
+        <li>
+          <span class="label-sm">Email</span>
+          <a href="mailto:info@aasthaint.com" style="font-weight:500;">info@aasthaint.com</a>
+        </li>
+        <li>
+          <span class="label-sm">Hours</span>
+          Mon–Sat: 10 AM – 7 PM<br>Sun: 11 AM – 5 PM
+        </li>
+      </ul>
+      <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.0821246395355!2d86.15289!3d23.79893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f63c2e3e3e3e3f%3A0x0!2sBinod%20Bihari%20Chowk%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1600000000000" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>AASTHA INTERIOR</h3>
+        <p>Premium furniture and complete home interior solutions for Dhanbad.</p>
+        <a href="https://wa.me/919693948201" class="btn btn-solid btn-sm" style="margin-top:16px;">WhatsApp Us</a>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#furniture">Furniture</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <div class="footer-links">
+          <a href="#interior">Interior Design</a>
+          <a href="#furniture">Custom Furniture</a>
+          <a href="#consult">Free Consultation</a>
+          <a href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Aastha Interior. All rights reserved.</span>
+      <span>Crafted with ♥ for beautiful homes in Dhanbad</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919693948201?text=Hello%20Aastha%20Interior%2C%20I%20want%20information%20about%20furniture%2Finterior%20work." class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.6915026,2.4744748 C15.6693616,0.5152326 12.6593945,0.5152326 10.6372535,2.4744748 L2.4744748,10.6372535 C0.5152326,12.6593945 0.5152326,15.6693616 2.4744748,17.6915026 L10.6372535,25.8542813 C12.6593945,27.8135235 15.6693616,27.8135235 17.6915026,25.8542813 L25.8542813,17.6915026 C27.8135235,15.6693616 27.8135235,12.6593945 25.8542813,10.6372535 L17.6915026,2.4744748 Z" fill="#25D366"/><path d="M7.74349482,13.9999847 C8.30778515,13.9999847 8.75,13.5578725 8.75,12.9935821 C8.75,12.4292918 8.30778515,11.9871796 7.74349482,11.9871796 C7.17920449,11.9871796 6.73698964,12.4292918 6.73698964,12.9935821 C6.73698964,13.5578725 7.17920449,13.9999847 7.74349482,13.9999847 Z M12,13.9999847 C12.5642903,13.9999847 13.0065052,13.5578725 13.0065052,12.9935821 C13.0065052,12.4292918 12.5642903,11.9871796 12,11.9871796 C11.4357097,11.9871796 10.9934948,12.4292918 10.9934948,12.9935821 C10.9934948,13.5578725 11.4357097,13.9999847 12,13.9999847 Z M16.2565052,13.9999847 C16.8207955,13.9999847 17.2630104,13.5578725 17.2630104,12.9935821 C17.2630104,12.4292918 16.8207955,11.9871796 16.2565052,11.9871796 C15.6922149,11.9871796 15.25,12.4292918 15.25,12.9935821 C15.25,13.5578725 15.6922149,13.9999847 16.2565052,13.9999847 Z" fill="white"/></svg>
+</a>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // Project filter
+  function filterProjects(category) {
+    const buttons = document.querySelectorAll('.project-filter button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+
+  // Form submission
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const project = document.getElementById('project').value;
+    const message = document.getElementById('message').value;
+    
+    // Create WhatsApp message
+    const whatsappMessage = `Hi Aastha Interior, I'd like to book a free consultation.%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AProject Type: ${project}%0AMessage: ${message}`;
+    
+    // Redirect to WhatsApp
+    window.location.href = `https://wa.me/919693948201?text=${whatsappMessage}`;
+  }
+</script>
+
+</body>
+</html>
